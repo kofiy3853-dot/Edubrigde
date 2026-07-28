@@ -1,0 +1,48 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Java
+*.java text diff=java
+*.kt text diff=java
+*.gradle text diff=java
+
+# JavaScript/TypeScript
+*.js text diff=javascript
+*.ts text diff=typescript
+*.jsx text diff=javascript
+*.tsx text diff=typescript
+
+# Web
+*.html text diff=html
+*.css text diff=css
+*.scss text diff=css
+
+# Config
+*.json text
+*.yml text
+*.yaml text
+*.toml text
+*.xml text
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Docker
+Dockerfile text
+
+# Documentation
+*.md text diff=markdown
+*.txt text
+
+# Binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
