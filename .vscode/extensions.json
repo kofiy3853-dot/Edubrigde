@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "redhat.java",
+    "vmware.vscode-spring-boot",
+    "vmware.vscode-spring-initializr",
+    "docker.docker",
+    "eamodio.gitlens",
+    "bradlc.vscode-tailwindcss",
+    "ckolkman.vscode-postgres",
+    "rangav.vscode-thunder-client",
+    "github.vscode-pull-request-github",
+    "ms-playwright.playwright",
+    "yzhang.markdown-all-in-one",
+    "editorconfig.editorconfig"
+  ]
+}

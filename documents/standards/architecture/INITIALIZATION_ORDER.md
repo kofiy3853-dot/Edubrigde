@@ -2,115 +2,210 @@
 
 ## Status
 
-LOCKED - Sprint 0B, Step 10
+LOCKED - Sprint 0C, Step 11
 
 ## Principle
 
 Technologies initialize in dependency order. No skipping.
 
-## Initialization Phases
+## Locked Initialization Steps
 
-### Phase 1: Development Workspace
+```
+Step 11  -> Workspace Initialization
+Step 12  -> Next.js Initialization
+Step 13  -> Shared Packages Initialization
+Step 14  -> Spring Boot Initialization
+Step 15  -> PostgreSQL Initialization
+Step 16  -> Redis Initialization
+Step 17  -> Kafka Initialization
+Step 18  -> MinIO Initialization
+Step 19  -> Docker Initialization
+Step 20  -> Monitoring Initialization
+Step 21  -> CI/CD Initialization
+```
+
+## Layered Implementation Strategy
+
+```
+Workspace
+    |
+    v
+Frontend
+    |
+    v
+Shared Packages
+    |
+    v
+Backend
+    |
+    v
+Databases
+    |
+    v
+Messaging
+    |
+    v
+Storage
+    |
+    v
+Infrastructure
+    |
+    v
+Monitoring
+    |
+    v
+CI/CD
+    |
+    v
+Domains
+    |
+    v
+Features
+    |
+    v
+Production
+```
+
+## Dependency Map
+
+```
+Step 11  -> No dependencies
+Step 12  -> Step 11
+Step 13  -> Step 11
+Step 14  -> Step 11
+Step 15  -> Step 14
+Step 16  -> Step 14
+Step 17  -> Step 15
+Step 18  -> Step 15
+Step 19  -> Step 12, 14, 15, 16, 17, 18
+Step 20  -> Step 19
+Step 21  -> Step 19
+```
+
+## Step Details
+
+### Step 11: Workspace Initialization
 
 ```
 Components:
-  - Git repository
-  - IDE configuration
-  - Code formatting rules
-  - Linting configuration
-  - Pre-commit hooks
+  - .vscode/ configuration
+  - Directory protection standards
+  - Development policy standards
+  - Workspace responsibility standards
+  - Repository-wide formatting
 
 Verification:
-  - Git status works
-  - IDE opens project
+  - VS Code recognizes workspace
+  - Extensions recommended
   - Formatting applies
   - Linting runs
 ```
 
-### Phase 2: Frontend Foundation
+### Step 12: Next.js Initialization
 
 ```
 Components:
   - Next.js application
   - TypeScript configuration
-  - TailwindCSS setup
-  - Shadcn/UI installation
-  - ESLint + Prettier
+  - App Router setup
+  - Modular frontend structure
 
 Verification:
   - App starts on port 3000
   - TypeScript compiles
-  - TailwindCSS applies
-  - Components render
+  - App Router works
+  - Server Components render
 ```
 
-### Phase 3: Backend Foundation
+### Step 13: Shared Packages Initialization
+
+```
+Components:
+  - packages/types
+  - packages/validators
+  - packages/constants
+  - packages/utils
+
+Verification:
+  - Types compile
+  - Validators work
+  - Constants accessible
+  - Utilities functional
+```
+
+### Step 14: Spring Boot Initialization
 
 ```
 Components:
   - Java project setup
   - Spring Boot application
   - Gradle build system
-  - Spring Security baseline
   - OpenAPI configuration
 
 Verification:
   - App starts on port 4000
   - Health check responds
   - OpenAPI spec available
-  - Security filter active
 ```
 
-### Phase 4: Data Layer
+### Step 15: PostgreSQL Initialization
 
 ```
 Components:
   - PostgreSQL setup
-  - Redis setup
   - Flyway migrations
   - Connection pooling
   - Schema-per-domain
 
 Verification:
   - PostgreSQL accepts connections
-  - Redis accepts connections
   - Migrations run successfully
   - Connection pool active
 ```
 
-### Phase 5: Messaging Layer
+### Step 16: Redis Initialization
+
+```
+Components:
+  - Redis setup
+  - Cache configuration
+  - Session store
+
+Verification:
+  - Redis accepts connections
+  - Cache operations work
+  - Sessions persist
+```
+
+### Step 17: Kafka Initialization
 
 ```
 Components:
   - Kafka setup
   - Topic configuration
-  - Schema registry (future)
   - Producer/consumer setup
 
 Verification:
   - Kafka accepts connections
   - Topics created
-  - Messages can be produced
-  - Messages can be consumed
+  - Messages produced and consumed
 ```
 
-### Phase 6: Storage Layer
+### Step 18: MinIO Initialization
 
 ```
 Components:
   - MinIO setup
   - Bucket configuration
-  - Access policies
   - Presigned URL generation
 
 Verification:
   - MinIO accepts connections
   - Buckets created
-  - Files can be uploaded
-  - Presigned URLs work
+  - Files uploaded and retrieved
 ```
 
-### Phase 7: Container Layer
+### Step 19: Docker Initialization
 
 ```
 Components:
@@ -118,33 +213,28 @@ Components:
   - Docker Compose configuration
   - Network configuration
   - Volume configuration
-  - Health checks
 
 Verification:
   - All containers build
   - All containers start
   - Networks configured
-  - Volumes mounted
 ```
 
-### Phase 8: Monitoring Layer
+### Step 20: Monitoring Initialization
 
 ```
 Components:
   - Prometheus configuration
   - Grafana dashboards
   - OpenTelemetry setup
-  - Loki configuration
-  - Alert rules
 
 Verification:
   - Prometheus scrapes metrics
   - Grafana displays dashboards
-  - Traces are collected
-  - Logs are aggregated
+  - Traces collected
 ```
 
-### Phase 9: CI/CD Layer
+### Step 21: CI/CD Initialization
 
 ```
 Components:
@@ -152,68 +242,44 @@ Components:
   - Build pipeline
   - Test pipeline
   - Deployment pipeline
-  - Security scanning
 
 Verification:
   - CI runs on push
   - Tests execute
   - Images build
-  - Deployments work
 ```
 
-### Phase 10: Domain Implementation
+## Implementation Rules
 
 ```
-Components:
-  - Identity domain
-  - Academic domain
-  - Career domain
-  - Financial domain
-  - Institution domain
-  - Communication domain
-  - Analytics domain
-  - AI domain
-
-Verification:
-  - Each domain follows standards
-  - Each domain has tests
-  - Each domain has documentation
+1. Steps execute in order only
+2. Each step must be verified before proceeding
+3. No step may be skipped
+4. Each step produces runnable/testable assets
+5. Documentation accompanies every step
 ```
 
-## Phase Dependencies
+## Post-Step 21
+
+After Step 21, domain implementation begins:
 
 ```
-Phase 1  -> No dependencies
-Phase 2  -> Phase 1
-Phase 3  -> Phase 1
-Phase 4  -> Phase 3
-Phase 5  -> Phase 4
-Phase 6  -> Phase 4
-Phase 7  -> Phase 2, 3, 4, 5, 6
-Phase 8  -> Phase 7
-Phase 9  -> Phase 7
-Phase 10 -> Phase 2, 3, 4, 5, 6, 7, 8
-```
-
-## Verification Requirements
-
-Every phase must verify:
-
-```
-1. All components working
-2. All tests passing
-3. All documentation updated
-4. All standards followed
-5. All security requirements met
+Identity Domain -> Authentication -> Authorization
+Financial Domain -> Payments -> Scholarships
+Academic Domain -> Universities -> Courses
+Career Domain -> Job Matching -> Applications
+Learning Center -> Courses -> Assessments
+AI Services -> Recommendations -> Analytics
 ```
 
 ## Never
 
 ```
-- Skip phases
+- Skip steps
 - Initialize out of order
 - Skip verification
 - Skip documentation
 - Skip testing
 - Initialize production before development
+- Implement features before infrastructure
 ```
