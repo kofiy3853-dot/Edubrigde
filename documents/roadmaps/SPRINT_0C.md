@@ -21,8 +21,9 @@ Content:    .vscode/ configuration, directory protection standards,
 ### Step 12: Next.js Initialization
 
 ```
-Status:     IN PROGRESS
-Content:    Next.js 15, TypeScript 5, App Router, modular frontend structure
+Status:     COMPLETE
+Content:    Next.js 16, TypeScript 5, App Router, modular frontend structure,
+            ADR-003 (Frontend Architecture), 27 directories created
 ```
 
 ### Step 13: Shared Packages Initialization
@@ -92,7 +93,7 @@ Content:    GitHub Actions, build/test/deploy pipelines
 
 ```
 ✓ Step 11: Workspace initialized
-  Step 12: Next.js running
+✓ Step 12: Next.js running
   Step 13: Shared packages compiled
   Step 14: Spring Boot running
   Step 15: PostgreSQL connected
