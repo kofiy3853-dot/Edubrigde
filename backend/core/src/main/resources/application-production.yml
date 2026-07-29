@@ -1,0 +1,9 @@
+spring:
+  config:
+    activate:
+      on-profile: production
+
+logging:
+  level:
+    com.edubridge: INFO
+    org.springframework: WARN

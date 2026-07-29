@@ -1,0 +1,9 @@
+spring:
+  config:
+    activate:
+      on-profile: development
+
+logging:
+  level:
+    com.edubridge: DEBUG
+    org.springframework: INFO

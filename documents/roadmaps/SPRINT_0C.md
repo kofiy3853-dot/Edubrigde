@@ -35,11 +35,13 @@ Content:    TailwindCSS 4, Shadcn/UI, React Hook Form, Zod,
             FRONTEND_STANDARDS.md
 ```
 
-### Step 14: Spring Boot Initialization
+### Step 14: Spring Boot Multi-Module Initialization
 
 ```
-Status:     PENDING
-Content:    Java 21, Spring Boot 3.4, Gradle, OpenAPI
+Status:     COMPLETE
+Content:    Java 21, Spring Boot 3.4, Gradle 8.12, multi-module architecture,
+            12 modules (core, shared, 9 domains, integration, tests),
+            ADR-005, BACKEND_STANDARDS.md
 ```
 
 ### Step 15: PostgreSQL Initialization
@@ -97,7 +99,7 @@ Content:    GitHub Actions, build/test/deploy pipelines
 ✓ Step 11: Workspace initialized
 ✓ Step 12: Next.js running
 ✓ Step 13: Frontend foundation complete
-  Step 14: Spring Boot running
+✓ Step 14: Backend foundation complete
   Step 15: PostgreSQL connected
   Step 16: Redis connected
   Step 17: Kafka connected

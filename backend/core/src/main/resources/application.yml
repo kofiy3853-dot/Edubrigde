@@ -1,0 +1,25 @@
+server:
+  port: 4000
+
+spring:
+  application:
+    name: edubridge-os
+  profiles:
+    active: development
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: when-authorized
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
