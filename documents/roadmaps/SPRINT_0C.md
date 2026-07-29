@@ -115,6 +115,15 @@ Content:    Zero-Trust Architecture, JWT (jjwt 0.12.6), Access/Refresh Tokens,
             JWTAuthenticationFilter, ADR-013, AUTHENTICATION_STANDARDS.md
 ```
 
+### Step 23: Identity Authorization Module Initialization
+
+```
+Status:     COMPLETE
+Content:    Policy-Based RBAC, Policy/AccessLog entities, PolicyEngine,
+            AuthorizationContext, AuthorizationController (5 endpoints),
+            ADR-014, AUTHORIZATION_STANDARDS.md
+```
+
 ## Completion Checklist
 
 ```
@@ -130,6 +139,7 @@ Content:    Zero-Trust Architecture, JWT (jjwt 0.12.6), Access/Refresh Tokens,
 ✓ Step 20: Observability foundation complete
 ✓ Step 21: Identity Domain foundation complete
 ✓ Step 22: Authentication module complete
+✓ Step 23: Authorization module complete
 ```
 
 ## Next Sprint
