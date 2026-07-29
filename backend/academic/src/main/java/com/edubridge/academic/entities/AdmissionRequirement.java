@@ -20,7 +20,7 @@ public class AdmissionRequirement extends AuditableEntity {
     private String programId; // null means university-wide
 
     @Column(name = "requirement_type", nullable = false, length = 50)
-    private String requirementType; // ACADEMIC, LANGUAGE, AGE, COUNTRY, PROGRAM, DOCUMENT
+    private String requirementType; // ACADEMIC, LANGUAGE, AGE, COUNTRY, DOCUMENT, EXPERIENCE, PROGRAM
 
     @Column(name = "name", nullable = false, length = 255)
     private String name;
@@ -44,11 +44,15 @@ public class AdmissionRequirement extends AuditableEntity {
     @Column(name = "allowed_values", length = 5000)
     private String allowedValues; // JSON array of allowed values
 
-    @Column(name = "is_active", nullable = false)
+    @Column(name = "weight", nullable = false)
     @Builder.Default
-    private Boolean isActive = true;
+    private Integer weight = 0;
 
     @Column(name = "priority", nullable = false)
     @Builder.Default
     private Integer priority = 0;
+
+    @Column(name = "is_active", nullable = false)
+    @Builder.Default
+    private Boolean isActive = true;
 }
