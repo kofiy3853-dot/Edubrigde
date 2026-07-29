@@ -1,0 +1,34 @@
+# Docker ignore
+node_modules
+.next
+.git
+*.md
+.vscode
+.idea
+.env
+.env.local
+*.log
+
+# Java
+backend/**/build/
+backend/**/bin/
+backend/.gradle/
+*.class
+*.jar
+*.war
+
+# Python
+__pycache__
+*.pyc
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
