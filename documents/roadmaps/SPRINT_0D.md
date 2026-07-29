@@ -70,15 +70,6 @@ Content:    Student Services Integration Architecture,
             ADR-033, STUDENT_SERVICES_COMPLETION_STANDARDS.md
 ```
 
-### Step 42: Student Services Domain Completion
-
-```
-Status:     PENDING
-Content:    Student Services Integration Standards,
-            Cross-Domain Communication/Audit Standards/
-            Student Services Foundation Verification
-```
-
 ## Completion Checklist
 
 ```
@@ -86,8 +77,7 @@ Content:    Student Services Integration Standards,
 ✓ Step 38: Consultation Management Module complete
 ✓ Step 39: Mentorship Services Module complete
 ✓ Step 40: Student Support Module complete
-✓ Step 41: Student Services Domain Completion
-✓ Step 42: Student Services Domain COMPLETE (100%)
+✓ Step 41: Student Services Domain COMPLETE (100%)
 ```
 
 ## Next Sprint
