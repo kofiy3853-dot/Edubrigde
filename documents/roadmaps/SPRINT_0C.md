@@ -95,11 +95,14 @@ Content:    Observability-First Architecture, Grafana 11, Prometheus,
             ADR-011, OBSERVABILITY_STANDARDS.md
 ```
 
-### Step 21: CI/CD Initialization
+### Step 21: Identity Domain Foundation Initialization
 
 ```
-Status:     PENDING
-Content:    GitHub Actions, build/test/deploy pipelines
+Status:     COMPLETE
+Content:    Guardian Domain, User/Role/Permission entities, Repositories,
+            Services (UserService, RoleService, PermissionService,
+            AuthenticationService, AuthorizationService, SessionService),
+            DTOs, ADR-012, IDENTITY_STANDARDS.md
 ```
 
 ## Completion Checklist
@@ -115,7 +118,7 @@ Content:    GitHub Actions, build/test/deploy pipelines
 ✓ Step 18: MinIO foundation complete
 ✓ Step 19: Docker + NGINX infrastructure complete
 ✓ Step 20: Observability foundation complete
-  Step 21: CI/CD pipelines working
+✓ Step 21: Identity Domain foundation complete
 ```
 
 ## Next Sprint
