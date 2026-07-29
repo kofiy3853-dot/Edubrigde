@@ -220,6 +220,18 @@ Content:    Student-Centric Financial Intelligence Architecture,
             ADR-023, FINANCIAL_DOMAIN_STANDARDS.md
 ```
 
+### Step 33: Cost Management Module
+
+```
+Status:     COMPLETE
+Content:    Cost Management Architecture, CostCategory/CostItem/CostBreakdown/
+            CostComparison/CostEstimate/CostPolicy entities,
+            CostCategoryService, CostItemService, CostBreakdownService,
+            CostComparisonService, CostEstimateService, CostPolicyService,
+            CostManagementController (55 endpoints),
+            ADR-024, COST_MANAGEMENT_STANDARDS.md
+```
+
 ## Completion Checklist
 
 ```
@@ -245,6 +257,7 @@ Content:    Student-Centric Financial Intelligence Architecture,
 ✓ Step 30: Admissions Management Module complete
 ✓ Step 31: Academic Domain COMPLETE (100%)
 ✓ Step 32: Financial Domain foundation complete
+✓ Step 33: Cost Management Module complete
 ```
 
 ## Next Sprint
