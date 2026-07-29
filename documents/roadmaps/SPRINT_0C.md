@@ -69,11 +69,12 @@ Content:    Kafka 3.8, Spring Kafka, EventProducer, BaseEventConsumer,
             DomainEvent, EventEnvelope, ADR-008, KAFKA_STANDARDS.md
 ```
 
-### Step 18: MinIO Initialization
+### Step 18: MinIO Foundation Initialization
 
 ```
-Status:     PENDING
-Content:    MinIO, buckets, presigned URLs
+Status:     COMPLETE
+Content:    MinIO 8.5.12, metadata-first architecture, ObjectStorageService,
+            FileValidationService, 8 buckets, ADR-009, MINIO_STANDARDS.md
 ```
 
 ### Step 19: Docker Initialization
@@ -107,7 +108,7 @@ Content:    GitHub Actions, build/test/deploy pipelines
 ✓ Step 15: Database foundation complete
 ✓ Step 16: Redis foundation complete
 ✓ Step 17: Kafka foundation complete
-  Step 18: MinIO connected
+✓ Step 18: MinIO foundation complete
   Step 19: Docker containers running
   Step 20: Monitoring active
   Step 21: CI/CD pipelines working

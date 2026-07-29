@@ -6,6 +6,11 @@ spring:
     name: edubridge-os
   profiles:
     active: development
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 100MB
   datasource:
     url: jdbc:postgresql://localhost:5432/edubridge
     username: postgres
@@ -98,3 +103,32 @@ springdoc:
     path: /swagger-ui.html
     tags-sorter: alpha
     operations-sorter: alpha
+
+minio:
+  endpoint: http://localhost:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  region: us-east-1
+  buckets:
+    student-documents: edubridge-student-documents
+    student-certificates: edubridge-student-certificates
+    learning-resources: edubridge-learning-resources
+    application-documents: edubridge-application-documents
+    reports: edubridge-reports
+    temporary-uploads: edubridge-temporary-uploads
+    media-assets: edubridge-media-assets
+    generated-files: edubridge-generated-files
+  defaults:
+    expiry-duration: 15m
+    max-file-size: 50MB
+    allowed-types:
+      - application/pdf
+      - image/png
+      - image/jpeg
+      - image/gif
+      - application/msword
+      - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+      - application/vnd.ms-excel
+      - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+    versioning-enabled: true
+    encryption-enabled: true
