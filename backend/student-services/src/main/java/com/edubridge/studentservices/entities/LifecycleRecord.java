@@ -7,7 +7,7 @@ import lombok.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "lifecycle_records", schema = "student_services")
+@Table(name = "mentorship_lifecycle_records", schema = "student_services")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -15,10 +15,10 @@ import java.time.LocalDateTime;
 @Builder
 public class LifecycleRecord extends AuditableEntity {
 
-    @Column(name = "consultation_id", nullable = false)
-    private String consultationId;
+    @Column(name = "mentorship_id", nullable = false)
+    private String mentorshipId;
 
-    @Column(name = "student_id")
+    @Column(name = "student_id", nullable = false)
     private String studentId;
 
     @Column(name = "previous_status", length = 50)
@@ -30,7 +30,7 @@ public class LifecycleRecord extends AuditableEntity {
     @Column(name = "reason", length = 2000)
     private String reason;
 
-    @Column(name = "changed_by", nullable = false, length = 255)
+    @Column(name = "changed_by", nullable = false)
     private String changedBy;
 
     @Column(name = "changed_at", nullable = false)

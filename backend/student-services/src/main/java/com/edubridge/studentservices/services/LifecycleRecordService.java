@@ -19,10 +19,7 @@ public class LifecycleRecordService {
 
     @Transactional
     public LifecycleRecord createLifecycleRecord(LifecycleRecord record) {
-        log.info("Creating lifecycle record for consultation: {} status: {}", record.getConsultationId(), record.getNewStatus());
-        if (record.getChangedAt() == null) {
-            record.setChangedAt(LocalDateTime.now());
-        }
+        log.info("Creating lifecycle record for mentorship: {}", record.getMentorshipId());
         return lifecycleRecordRepository.save(record);
     }
 
@@ -33,33 +30,13 @@ public class LifecycleRecordService {
     }
 
     @Transactional(readOnly = true)
-    public List<LifecycleRecord> getLifecycleRecordsByConsultation(String consultationId) {
-        return lifecycleRecordRepository.findByConsultationIdAndIsActiveTrue(consultationId);
+    public List<LifecycleRecord> getLifecycleRecordsByMentorship(String mentorshipId) {
+        return lifecycleRecordRepository.findByMentorshipIdAndIsActiveTrue(mentorshipId);
     }
 
     @Transactional(readOnly = true)
     public List<LifecycleRecord> getLifecycleRecordsByStudent(String studentId) {
         return lifecycleRecordRepository.findByStudentIdAndIsActiveTrue(studentId);
-    }
-
-    @Transactional(readOnly = true)
-    public List<LifecycleRecord> getLifecycleRecordsByStatus(String newStatus) {
-        return lifecycleRecordRepository.findByNewStatusAndIsActiveTrue(newStatus);
-    }
-
-    @Transactional(readOnly = true)
-    public List<LifecycleRecord> getLifecycleRecordsByConsultationAndStudent(String consultationId, String studentId) {
-        return lifecycleRecordRepository.findByConsultationAndStudent(consultationId, studentId);
-    }
-
-    @Transactional(readOnly = true)
-    public LifecycleRecord getLatestLifecycleByConsultation(String consultationId) {
-        return lifecycleRecordRepository.findLatestByConsultation(consultationId);
-    }
-
-    @Transactional(readOnly = true)
-    public List<LifecycleRecord> getLatestLifecycleByStudent(String studentId) {
-        return lifecycleRecordRepository.findLatestByStudent(studentId);
     }
 
     @Transactional
