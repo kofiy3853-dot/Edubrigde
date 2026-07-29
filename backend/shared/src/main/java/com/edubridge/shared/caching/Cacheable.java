@@ -1,0 +1,14 @@
+package com.edubridge.shared.caching;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Cacheable {
+    String key();
+    long ttlSeconds() default 600;
+    String prefix() default "";
+}
