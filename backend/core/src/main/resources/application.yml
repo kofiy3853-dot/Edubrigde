@@ -59,6 +59,28 @@ spring:
       cache-null-values: false
       key-prefix: "edubridge:"
       use-key-prefix: true
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: all
+      retries: 3
+      properties:
+        max.block.ms: 5000
+        linger.ms: 10
+        batch.size: 16384
+    consumer:
+      group-id: edubridge
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      properties:
+        spring.json.trusted.packages: "com.edubridge.shared.events,com.edubridge.*"
+    listener:
+      ack-mode: manual_immediate
+      concurrency: 3
 
 management:
   endpoints:

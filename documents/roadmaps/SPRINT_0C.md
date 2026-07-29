@@ -61,11 +61,12 @@ Content:    Redis 7, Lettuce pool, 6 shared services (CacheService,
             TempTokenService), ADR-007, REDIS_STANDARDS.md
 ```
 
-### Step 17: Kafka Initialization
+### Step 17: Kafka Foundation Initialization
 
 ```
-Status:     PENDING
-Content:    Kafka 3.8, topics, producers, consumers
+Status:     COMPLETE
+Content:    Kafka 3.8, Spring Kafka, EventProducer, BaseEventConsumer,
+            DomainEvent, EventEnvelope, ADR-008, KAFKA_STANDARDS.md
 ```
 
 ### Step 18: MinIO Initialization
@@ -105,7 +106,7 @@ Content:    GitHub Actions, build/test/deploy pipelines
 ✓ Step 14: Backend foundation complete
 ✓ Step 15: Database foundation complete
 ✓ Step 16: Redis foundation complete
-  Step 17: Kafka connected
+✓ Step 17: Kafka foundation complete
   Step 18: MinIO connected
   Step 19: Docker containers running
   Step 20: Monitoring active
