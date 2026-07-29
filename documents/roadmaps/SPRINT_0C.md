@@ -246,6 +246,20 @@ Content:    Global Scholarship Intelligence Architecture,
             ADR-025, SCHOLARSHIP_MANAGEMENT_STANDARDS.md
 ```
 
+### Step 35: Budget Planning Module
+
+```
+Status:     COMPLETE
+Content:    Financial Sustainability Architecture,
+            BudgetProfile/AffordabilityRecord/SustainabilityRecord/
+            RiskAssessment/BudgetPolicy/BudgetLifecycleRecord entities,
+            BudgetProfileService, AffordabilityRecordService,
+            SustainabilityRecordService, RiskAssessmentService,
+            BudgetPolicyService, BudgetLifecycleRecordService,
+            BudgetPlanningController (45 endpoints),
+            ADR-026, BUDGET_PLANNING_STANDARDS.md
+```
+
 ## Completion Checklist
 
 ```
@@ -273,6 +287,7 @@ Content:    Global Scholarship Intelligence Architecture,
 ✓ Step 32: Financial Domain foundation complete
 ✓ Step 33: Cost Management Module complete
 ✓ Step 34: Scholarship Management Module complete
+✓ Step 35: Budget Planning Module complete
 ```
 
 ## Next Sprint
