@@ -48,20 +48,25 @@ Content:    Student Growth and Lifelong Mentorship Architecture,
 
 ```
 Status:     COMPLETE
-Content:    Student Support Intelligence Architecture,
-            Student Support Profile/Academic Support Record/
-            Wellbeing Record/Resource Record/Assessment Record/
-            Lifecycle Record Entities, Repositories, Services,
-            DTOs, Controller, ADR-031, STUDENT_SUPPORT_STANDARDS.md
+Content:    Comprehensive Student Wellbeing Architecture,
+            Student Support Management/Wellbeing Engine/
+            Resource Management/International Student Services/
+            Accessibility Management/Policy Validation/Audit Layer/
+            Monitoring Layer Standards,
+            ADR-031 (LOCKED — PERMANENT),
+            STUDENT_SUPPORT_STANDARDS.md (LOCKED — PERMANENT)
 ```
 
-### Step 41: Student Assessment Module
+> **Milestone**: Step 40 establishes the Student Support Management Module as the permanent owner of student wellbeing, educational resource standards, international student support, and accessibility intelligence throughout EduBridge OS. The platform now possesses repository-wide standards for student support lifecycle management, auditing, monitoring, validation, and cross-domain integrations.
+
+### Step 41: Student Services Domain Completion
 
 ```
 Status:     PENDING
-Content:    Student Assessment Standards,
-            Assessment Records/Performance Tracking/
-            Student Evaluation Foundations
+Content:    Student Services Integration Standards,
+            Repository Verification/Cross-Domain Communication/
+            Audit Standards/Domain Standards Completion/
+            Student Services Foundation Verification
 ```
 
 ### Step 42: Student Services Domain Completion
@@ -80,7 +85,7 @@ Content:    Student Services Integration Standards,
 ✓ Step 38: Consultation Management Module complete
 ✓ Step 39: Mentorship Services Module complete
 ✓ Step 40: Student Support Module complete
-  Step 41: Student Assessment Module complete
+  Step 41: Student Services Domain Completion
   Step 42: Student Services Domain COMPLETE (100%)
 ```
 
