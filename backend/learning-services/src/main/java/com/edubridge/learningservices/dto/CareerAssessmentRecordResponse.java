@@ -1,0 +1,35 @@
+package com.edubridge.learningservices.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class CareerAssessmentRecordResponse {
+    private String id;
+    private String studentId;
+    private String careerProfileId;
+    private String assessmentType;
+    private String assessmentName;
+    private String assessmentStatus;
+    private String assessmentDomain;
+    private Double scoreEarned;
+    private Double scorePossible;
+    private Double percentageScore;
+    private String grade;
+    private String competencyLevel;
+    private Double passingScore;
+    private Boolean isPassed;
+    private String feedback;
+    private String recommendations;
+    private String assessedBy;
+    private LocalDateTime assessedAt;
+    private LocalDateTime validUntil;
+    private Boolean isActive;
+}
