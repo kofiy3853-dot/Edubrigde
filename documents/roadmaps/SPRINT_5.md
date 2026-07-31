@@ -60,12 +60,33 @@ Step 139 ✓ COMPLETE
 
 ---
 
+## Step 140: Student Aggregate Design
+
+### Status: COMPLETE
+
+**Commit:** [pending]
+
+**Deliverables:**
+- ADR-135: Student Aggregate as Transactional Consistency Boundary (LOCKED)
+- STUDENT_AGGREGATE_DESIGN_STANDARDS.md (LOCKED)
+
+**Sprint Progress:**
+```
+Step 137 ✓ COMPLETE
+Step 138 ✓ COMPLETE
+Step 139 ✓ COMPLETE
+Step 140 ✓ COMPLETE
+```
+
+---
+
 ## Sprint 5 Summary
 
 ```
 Step 137: ✓ Domain-Driven Design (DDD) Context Mapping (COMPLETE)
 Step 138: ✓ Shared Kernel Foundation (COMPLETE)
 Step 139: ✓ Student Domain Foundation (COMPLETE)
+Step 140: ✓ Student Aggregate Design (COMPLETE)
 ```
 
 ## Sprint Progress
@@ -76,6 +97,7 @@ SPRINT 5
 Step 137 ✓ COMPLETE
 Step 138 ✓ COMPLETE
 Step 139 ✓ COMPLETE
+Step 140 ✓ COMPLETE
 ------------------------------------------------
 STATUS
 SPRINT 5 IN PROGRESS
@@ -87,7 +109,8 @@ SPRINT 5 IN PROGRESS
 - **Step 137:** DDD Context Map ESTABLISHED
 - **Step 138:** Shared Kernel Foundation ESTABLISHED
 - **Step 139:** Student Domain Foundation ESTABLISHED
-- **Step 140:** University Domain Foundation (NEXT)
+- **Step 140:** Student Aggregate Design ESTABLISHED
+- **Step 141:** Student Entity Modeling (NEXT)
 
 ## Dependencies
 
@@ -108,3 +131,4 @@ SPRINT 5 IN PROGRESS
 - Domain Implementation Foundations: COMPLETE
 - DDD Context Mapping: COMPLETE
 - Shared Kernel Foundation: COMPLETE
+- Student Domain Foundation: COMPLETE
