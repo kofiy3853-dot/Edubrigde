@@ -395,12 +395,13 @@ SPRINT 3 IN PROGRESS
 - **Step 112:** Domain State Management Foundations ESTABLISHED
 - **Step 113:** Domain Policy Foundations ESTABLISHED
 - **Step 114:** Domain Security Foundations ESTABLISHED
-- **Step 115:** Domain Testing Foundations (NEXT)
-- **Step 116:** Platform Architecture Foundations
-- **Step 117:** Application Layer Foundations
-- **Step 118:** Service Layer Foundations
-- **Step 119:** API Layer Foundations
-- **Step 120:** Infrastructure Layer Foundations
+- **Step 115:** Domain Governance Foundations (NEXT)
+- **Step 116:** Domain Testing Foundations
+- **Step 117:** Platform Architecture Foundations
+- **Step 118:** Application Layer Foundations
+- **Step 119:** Service Layer Foundations
+- **Step 120:** API Layer Foundations
+- **Step 121:** Infrastructure Layer Foundations
 
 ## Dependencies
 
