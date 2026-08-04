@@ -12,6 +12,8 @@ dependencies {
     implementation(project(":backend:communication"))
     implementation(project(":backend:analytics"))
     implementation(project(":backend:ai"))
+    implementation(project(":backend:learning-services"))
+    implementation(project(":backend:student-services"))
 
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-validation")
